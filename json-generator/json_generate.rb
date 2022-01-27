@@ -79,8 +79,7 @@ def write_grant(outfile:, index: 0)
     "awardeename": Faker::University.name,
     "awardeestatecode": Faker::Address.state_abbr,
     "awardeezipcode": Faker::Address.zip_code,
-    "startdate": "#{Faker::Date.between(from: '2020-01-01', to: '2020-12-31')}",
-    "pinid": false,
+    "startdate": "#{Faker::Date.between(from: '2020-01-01', to: '2020-12-31')}"
   }.to_json
   outfile.write(grant)
 end
